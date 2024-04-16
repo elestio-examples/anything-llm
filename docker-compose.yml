@@ -2,6 +2,7 @@ version: "3.3"
 
 services:
   anything-llm:
+    user: 0:0
     image: mintplexlabs/anythingllm:${SOFTWARE_VERSION_TAG}
     restart: always
     cap_add:
@@ -12,7 +13,7 @@ services:
     ports:
       - "172.17.0.1:52840:3001"
     env_file:
-      - .env
+      - ./docker.env
 
 volumes:
   storage:
