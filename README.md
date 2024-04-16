@@ -13,5 +13,3 @@ Deploy Anything LLM server with CI/CD on Elestio
 You can open Anything LLM here:
 
     URL: https://[CI_CD_DOMAIN]/admin
-    email: admin
-    password: [ADMIN_PASSWORD]
