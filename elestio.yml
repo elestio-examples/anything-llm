@@ -18,11 +18,6 @@ environments:
     value: "3001"
   - key: "STORAGE_DIR"
     value: "/app/server/storage"
-  - key: "UID"
-    value: "1000"
-  - key: "GID"
-    value: "1000"
-
 config:
   runTime: "dockerCompose"
   version: ""
