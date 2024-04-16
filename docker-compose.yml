@@ -1,0 +1,15 @@
+version: "3.3"
+
+services:
+  anything-llm:
+    image: mintplexlabs/anythingllm:${SOFTWARE_VERSION_TAG}
+    restart: always
+    cap_add:
+      - SYS_ADMIN
+    volumes:
+      - "./.env:/app/server/.env"
+      - "./storage:/app/server/storage"
+    ports:
+      - "172.17.0.1:52840:3001"
+    env_file:
+      - .env
