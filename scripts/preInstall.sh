@@ -4,6 +4,9 @@ set -o allexport; source .env; set +o allexport;
 mkdir -p ./storage
 chown -R 1000:1000 ./storage
 
+mkdir -p ./collector/hotdir
+chown -R 1000:1000 ./collector/hotdir
+
 cat << EOT >> ./docker.env
 
 STORAGE_DIR='/app/server/storage'
